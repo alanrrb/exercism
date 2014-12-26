@@ -6,4 +6,4 @@ toRNA = map nucleotideToRNA
         nucleotideToRNA 'G' = 'C'
         nucleotideToRNA 'A' = 'U'
         nucleotideToRNA 'T' = 'A'
-        nucleotideToRNA  _  = ' '
+        nucleotideToRNA  _  = error "invalid entry"
