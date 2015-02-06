@@ -8,7 +8,7 @@ var Bob = function() {};
 Bob.prototype.hey = function(input) {
   if (input.trim().length == 0) {
     return "Fine. Be that way!";
-  } else if (input.search(/[A-ZÀ-Ü]/) != -1 && input.search(/[a-zà-ü]/) == -1) {
+  } else if (input.toUpperCase() === input && input.search(/[A-Za-z]/) != -1) {
     return "Whoa, chill out!";
   } else if (input.indexOf("?") == input.length -1) {
     return "Sure.";
